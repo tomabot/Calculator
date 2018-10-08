@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|top"
+    android:columnCount="4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calcDisplay"
+        android:layout_columnSpan="4"
+        android:layout_gravity="end"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textSize="32sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnCE"
+        android:onClick="onClearEntryClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnCLR"
+        android:onClick="onClearClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnDel"
+        android:onClick="onDelClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnDivide"
+        android:tag="@string/btnDivide"
+        android:onClick="onOpcodeClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btn7"
+        android:tag="@string/btn7"
+        android:onClick="onNumericClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btn8"
+        android:tag="@string/btn8"
+        android:onClick="onNumericClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btn9"
+        android:tag="@string/btn9"
+        android:onClick="onNumericClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnMultiply"
+        android:tag="@string/btnMultiply"
+        android:onClick="onOpcodeClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btn4"
+        android:tag="@string/btn4"
+        android:onClick="onNumericClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btn5"
+        android:tag="@string/btn5"
+        android:onClick="onNumericClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btn6"
+        android:tag="@string/btn6"
+        android:onClick="onNumericClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnSubtract"
+        android:tag="@string/btnSubtract"
+        android:onClick="onOpcodeClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btn1"
+        android:tag="@string/btn1"
+        android:onClick="onNumericClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btn2"
+        android:tag="@string/btn2"
+        android:onClick="onNumericClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btn3"
+        android:tag="@string/btn3"
+        android:onClick="onNumericClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnAdd"
+        android:tag="@string/btnAdd"
+        android:onClick="onOpcodeClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnChangeSign"
+        android:onClick="onChangeSignClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btn0"
+        android:tag="@string/btn0"
+        android:onClick="onNumericClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnDecimal"
+        android:onClick="onDecimalPointClick" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/btnEqual"
+        android:onClick="onEqualClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="opcode="
+        android:id="@+id/debugOpcode" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:text="accum=0.0"
+        android:id="@+id/debugAccum" />
+
+
+</GridLayout>
